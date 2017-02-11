@@ -180,8 +180,8 @@ img.award:last-of-type {
 }
 .leadershipContent img {
   height: 180px;
-  width: 180px;
-  border-radius: 50%;
+  /*width: 180px;*/
+  /*border-radius: 50%;*/
 }
 button {
   -webkit-transition: all 0.1s linear;
