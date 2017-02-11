@@ -183,6 +183,10 @@ img.award:last-of-type {
   /*width: 180px;*/
   /*border-radius: 50%;*/
 }
+img.headshot {
+  height: 150px;
+  border-radius: 2px;
+}
 button {
   -webkit-transition: all 0.1s linear;
   -moz-transition: all 0.1s linear;
