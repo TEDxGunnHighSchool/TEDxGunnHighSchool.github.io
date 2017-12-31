@@ -79,7 +79,31 @@ textarea {
 }
 
 
- footer {
+.profile {
+    font-family: 'Proxima Nova', 'Helvetica', sans-serif;
+}
+
+.profile .headshot {
+    width: 100%;
+    height: auto;
+}
+
+.profile .name {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 13pt;
+    display: block;
+    line-height: 110%;
+    border-bottom: 1px dotted #999;
+    margin-bottom: 7px;
+}
+
+.profile .bio {
+    font-size: 11pt;
+    line-height: 110%;
+}
+
+footer {
    font-family: "Adobe Caslon";
    font-size: 14pt;
    padding-top: 20px;
