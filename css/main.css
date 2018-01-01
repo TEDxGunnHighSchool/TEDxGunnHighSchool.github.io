@@ -103,6 +103,10 @@ textarea {
     line-height: 110%;
 }
 
+#leadership h4 {
+    color: #888;
+}
+
 footer {
    font-family: "Adobe Caslon";
    font-size: 14pt;
