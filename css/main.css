@@ -78,6 +78,10 @@ textarea {
     padding: 0.2em 0;
 }
 
+#schedule {
+    margin-top: 25px;
+    margin-bottom: -15px;
+}
 
 .profile {
     font-family: 'Proxima Nova', 'Helvetica', sans-serif;
