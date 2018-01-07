@@ -275,12 +275,11 @@ footer {
  }
 
  hr#starter {
-   /*display: none;*/
    padding: 0;
    margin: 0;
    height: 20px;
    border: 0;
-   background: rgb(31, 31, 31);/*#e74c3c;*/
+   background: rgb(31, 31, 31);
  }
 
  #header {
