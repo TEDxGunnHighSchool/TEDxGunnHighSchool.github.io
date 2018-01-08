@@ -2,6 +2,13 @@
 
 This is the source code for our website. If you have something to say, either [email us](mailto:tedx.gunnhs@gmail.com) or file an issue.
 
+### Past Webmasters
+- 2013-2014: [Kartik Chandra](https://hardmath123.github.io) and [Sam Winslow](http://samwinslow.github.io/)
+- 2014-2015: [Sam Winslow](https://samwinslow.github.io/)
+- 2015-2016: [Gautam Mittal](https://gmittal.github.io)
+- 2016-2017: [Gautam Mittal](https://gmittal.github.io)
+- 2017-2018: [Gautam Mittal](https://gmittal.github.io) and [Adnaan Sachidanandan](https://www.adnaan.co/)
+
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
 
