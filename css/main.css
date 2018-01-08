@@ -102,6 +102,8 @@ table th {
     font-size: .85em;
     letter-spacing: .1em;
     text-transform: uppercase;
+    color: #e74c3c;
+    border-bottom: 3px solid #e74c3c;
 }
 
 table a {
