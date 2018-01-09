@@ -169,7 +169,7 @@ footer {
      -o-transition: all 0.1s linear;
      -ms-transition: all 0.1s linear;
  }
- 
+
  button:hover {
      cursor: pointer;
      filter:brightness(80%);
@@ -184,7 +184,7 @@ footer {
      filter:brightness(60%);
      -webkit-filter:brightness(60%);
  }
- 
+
  a {
    color:black;
    text-decoration: none;
@@ -216,7 +216,7 @@ footer {
  .wallet a {
      color: red;
  }
- 
+
  .lavaLamp {
      height: 3px;
      width: 100%;
@@ -329,11 +329,11 @@ footer {
    padding-top: 40px;
    padding-bottom: 10px;
  }
- 
+
  #header .navLinks a {
    font-family: "Helvetica Neue", sans-serif;
    font-weight: 700;
-   margin-right: 25px;
+   margin-left: 25px;
    font-size: 14pt;
    text-decoration: none!important;
  }
@@ -689,6 +689,15 @@ blockquote quotee {
   font-style:normal;
 }
 
+#logodiv{
+  width: 28%;
+}
+
+#navbar{
+  width: 38.66%;
+
+}
+
 lead {
   color: rgba(33, 33, 33, 0.5);
 }
@@ -707,12 +716,47 @@ lead {
 .hljs-emphasis{font-style:italic}
 .hljs-strong{font-weight:bold}
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 1000px) {
+  #header .navLinks a {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #header .navLinks a {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   .navLinks a {
-    display:block;
-    float:left;
-    clear:left;
+    margin-left: 5px;
+    display: inline-block;
+    float:center;
     margin-bottom: 15px;
+  }
+
+  #logodiv{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100% !important;
+    padding-bottom: 0px;
+  }
+
+  #navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #logo {
+      margin: 20px auto -10px auto;
+      float:none;
+  }
+
+  p.lead {
+      margin-top: 10px;
   }
 
   #header {
@@ -755,29 +799,8 @@ lead {
   .wallet {
     font-size: 7pt;
   }
-
-  #logo {
-      margin: auto;
-  }
 }
 
-@media only screen and (max-width: 715px) {
-  .navLinks a {
-    display: block;
-    clear: left;
-    float:left;
-    margin-bottom: 15px;
-  }
-
-  #logo {
-      margin: 20px auto -10px auto;
-      float:none;
-  }
-
-  p.lead {
-      margin-top: 10px;
-  }
-}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
