@@ -383,7 +383,7 @@ footer {
      font-size: 13pt;
      line-height: 160%;
      color: #333;
-     margin-top: 0px!important;
+     margin-top: 10px!important;
  }
 
  .twitter-timeline {
@@ -722,15 +722,10 @@ lead {
   }
 }
 
-@media only screen and (max-width: 900px) {
-  #header .navLinks a {
-    margin-left: 5px;
-  }
-}
 
 @media only screen and (max-width: 850px) {
   .navLinks a {
-    margin-left: 5px;
+    margin-left: 10px;
     display: inline-block;
     float:center;
   }
@@ -822,6 +817,13 @@ lead {
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
+}
+
+@media only screen and (max-width: 850px) {
+  .navLinks a {
+    font-size: 12pt!important;
+    margin-left: 2px!important;
+  }
 }
 
 /* ==========================================================================
