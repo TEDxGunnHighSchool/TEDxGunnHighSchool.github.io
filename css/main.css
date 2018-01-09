@@ -383,7 +383,7 @@ footer {
      font-size: 13pt;
      line-height: 160%;
      color: #333;
-     margin-top: 20px;
+     margin-top: 0px!important;
  }
 
  .twitter-timeline {
@@ -755,7 +755,7 @@ lead {
   }
 
   p.lead {
-      margin-top: 10px;
+      margin-top: 0px;
   }
 
   #header {
