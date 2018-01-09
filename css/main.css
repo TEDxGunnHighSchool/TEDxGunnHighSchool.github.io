@@ -13,6 +13,15 @@ body {
     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
+#logodiv{
+  width: 28%;
+}
+
+#navbar{
+  width: 38.66%;
+
+}
+
 @font-face {
   src:url("../fonts/proximanova-bold-webfont.ttf");
   font-family: "Proxima Nova"; font-weight: 700;
@@ -687,15 +696,6 @@ blockquote quotee {
   font-family: "SFMoMA", sans-serif;
   display:block;
   font-style:normal;
-}
-
-#logodiv{
-  width: 28%;
-}
-
-#navbar{
-  width: 38.66%;
-
 }
 
 lead {
