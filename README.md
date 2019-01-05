@@ -1,6 +1,6 @@
 # TEDxGunnHighSchool
 
-This is the source code for our website. If you have something to say, either [email us](mailto:tedx.gunnhs@gmail.com) or file an issue.
+This is the source code for our website. It will always be the latest version and will always be mirrored at [tedxgunnhighschool.com](https://tedxgunnhighschool.com/). If you have something to say, either [email us](mailto:tedx.gunnhs@gmail.com) or file an issue.
 
 ### Past Webmasters
 - 2013-2014: [Kartik Chandra](https://hardmath123.github.io) and [Sam Winslow](http://samwinslow.github.io/)
