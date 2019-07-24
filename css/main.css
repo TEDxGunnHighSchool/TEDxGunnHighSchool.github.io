@@ -226,6 +226,23 @@ footer {
      color: red;
  }
 
+ .wallet a > img {
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   width: 50px;
+   height: auto;
+   -webkit-transition: all .1s linear;
+   -moz-transition: all .1s linear;
+   -o-transition: all .1s linear;
+   -ms-transition: all .1s linear;
+   display: inline-block;
+ }
+
+ .wallet a > img:hover {
+   filter: grayscale(0%);
+   -webkit-filter: grayscale(0%);
+ }
+
  .lavaLamp {
      height: 3px;
      width: 100%;
