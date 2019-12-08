@@ -17,9 +17,8 @@ body {
   width: 28%;
 }
 
-#navbar{
-  width: 38.66%;
-
+#navbar {
+  text-align: right;
 }
 
 @font-face {
