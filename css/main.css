@@ -357,10 +357,10 @@ footer {
 
  #header .navLinks a {
    font-family: "Helvetica Neue", sans-serif;
-   font-weight: 700; 
+   font-weight: 700;
    margin-left: 25px;
    font-size: 14pt;
-   text-decoration: none!important; 
+   text-decoration: none!important;
  }
 
  #header h1 {
@@ -744,6 +744,11 @@ lead {
     margin-left: 10px;
     display: inline-block;
     float:center;
+  }
+
+  #theme {
+    width: 100%!important;
+    padding-bottom: 10px!important;
   }
 
   #logodiv{
