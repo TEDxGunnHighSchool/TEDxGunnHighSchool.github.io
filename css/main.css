@@ -22,22 +22,22 @@ body {
 }
 
 @font-face {
-  src:url("../fonts/proximanova-bold-webfont.ttf");
+  src:url("../fonts/Inter-Bold.ttf");
   font-family: "Proxima Nova"; font-weight: 700;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-semibold-webfont.ttf");
+  src:url("../fonts/Inter-SemiBold.ttf");
   font-family: "Proxima Nova"; font-weight: 500;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-light-webfont.ttf");
+  src:url("../fonts/Inter-Light.ttf");
   font-family: "Proxima Nova"; font-weight: 300;
 }
 
 @font-face {
-  src:url("../fonts/proximanova-regular-webfont.ttf");
+  src:url("../fonts/Inter-Regular.ttf");
   font-family: "Proxima Nova"; font-weight: 400;
 }
 
