@@ -10,7 +10,7 @@ html {
 
 body {
     padding-bottom: 40px;
-    font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 #logodiv{
@@ -23,22 +23,22 @@ body {
 
 @font-face {
   src:url("../fonts/Inter-Bold.ttf");
-  font-family: "Proxima Nova"; font-weight: 700;
+  font-family: "Inter", "Proxima Nova"; font-weight: 700;
 }
 
 @font-face {
   src:url("../fonts/Inter-SemiBold.ttf");
-  font-family: "Proxima Nova"; font-weight: 500;
+  font-family: "Inter", "Proxima Nova"; font-weight: 500;
 }
 
 @font-face {
   src:url("../fonts/Inter-Light.ttf");
-  font-family: "Proxima Nova"; font-weight: 300;
+  font-family: "Inter", "Proxima Nova"; font-weight: 300;
 }
 
 @font-face {
   src:url("../fonts/Inter-Regular.ttf");
-  font-family: "Proxima Nova"; font-weight: 400;
+  font-family: "Inter", "Proxima Nova"; font-weight: 400;
 }
 
 ::-moz-selection {
