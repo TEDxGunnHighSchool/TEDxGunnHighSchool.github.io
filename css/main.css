@@ -131,7 +131,7 @@ table a:hover {
 }
 
 .profile {
-    font-family: 'Proxima Nova', 'Helvetica', sans-serif;
+    font-family: "Inter", 'Proxima Nova', 'Helvetica', sans-serif;
 }
 
 .profile .headshot {
@@ -169,7 +169,7 @@ footer {
      border: 0;
      padding: 10px 20px;
      border-radius: 10px;
-     font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+     font-family: "Inter", 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
      font-weight: 300;
      color: white;
      background: #EB0028;
@@ -210,7 +210,7 @@ footer {
  .quote {
    margin-top: 20px;
    text-align:center;
-   font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+   font-family: "inter", "Proxima Nova", "Helvetica Neue", "Helvetica", Arial, sans-serif;
    color: #999;
  }
 
@@ -263,7 +263,7 @@ footer {
 
 
  #mainTitle {
-   font-family: "SFMoMA", "San Francisco";
+   font-family: "Inter", "SFMoMA", "San Francisco";
    font-weight: 300;
    color:#333;
    line-height: 110%;
@@ -281,7 +281,7 @@ footer {
  }
 
  #mainDescription {
-   font-family: 'Proxima Nova';
+   font-family: "Inter", 'Proxima Nova';
    font-weight: 400;
    color: #333;
    text-align: center;
@@ -357,7 +357,7 @@ footer {
  }
 
  #header .navLinks a {
-   font-family: "Helvetica Neue", sans-serif;
+   font-family: "Inter", "Helvetica Neue", sans-serif;
    font-weight: 700;
    margin-left: 25px;
    font-size: 14pt;
@@ -365,7 +365,7 @@ footer {
  }
 
  #header h1 {
-   font-family: "SFMoMA", "San Francisco";
+   font-family: "Inter", "SFMoMA", "San Francisco";
    font-weight: 700;
    color: black;
    font-size: 22pt;
@@ -396,7 +396,7 @@ footer {
  }
 
  p.lead {
-     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+     font-family: "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
      font-size: 13pt;
      line-height: 160%;
      color: #333;
@@ -409,11 +409,11 @@ footer {
 
  .articleTitle {
    font-size: 18pt;
-   font-family:  'SFMoMA', 'Proxima Nova';
+   font-family:  "Inter", 'SFMoMA', 'Proxima Nova';
  }
 
  h2 {
-   font-family: "SFMoMA", "San Francisco";
+   font-family: "Inter", "SFMoMA", "San Francisco";
    font-weight: 600;
    line-height: 110%;
    border-bottom: 1px solid rgba(37, 36, 37, 0.1);
@@ -421,21 +421,21 @@ footer {
  }
 
  h2 > small {
-     font-family: "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+     font-family: "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
      color: #999;
      font-size: 10pt;
      line-height: 100%;
  }
 
  h3 {
-   font-family: "SFMoMA", "Proxima Nova";
+   font-family: "Inter", "SFMoMA", "Proxima Nova";
    border-bottom: 1px solid rgba(37, 36, 37, 0.1);
    line-height: 120%;
 
  }
 
  .date {
-   font-family: "Proxima Nova", "Franklin Book", "SFMoMA";
+   font-family: "Inter", "Proxima Nova", "Franklin Book", "SFMoMA";
    font-weight: 400;
    color: rgba(37, 36, 37, 0.7);
    font-size: 12pt;
@@ -469,7 +469,7 @@ footer {
    display:block;
    text-align:left;
    font-size: 14pt;
-   font-family: "SFMoMA", "Proxima Nova", sans-serif;
+   font-family: "Inter", "SFMoMA", "Proxima Nova", sans-serif;
    font-weight: 700;
  }
 
@@ -480,14 +480,14 @@ footer {
 
  .description {
    margin-right: 10px;
-   font-family: "SFMoMA", "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
+   font-family: "Inter", "SFMoMA", "Franklin Book", "Proxima Nova", "Helvetica", sans-serif;
    font-weight: 400;
    display:block;
  }
 
  .articleBody {
    font-size: 13pt;
-   font-family: "Proxima Nova", "Helvetica", sans-serif;
+   font-family: "Inter", "Proxima Nova", "Helvetica", sans-serif;
    line-height: 1.8;
    color: #181f21;
    text-rendering: optimizeLegibility;
@@ -515,7 +515,7 @@ footer {
 
  .mainIntro .date {
    font-size: 13pt;
-   font-family: "Proxima Nova";
+   font-family: "Inter", "Proxima Nova";
    font-weight: 100;
    border-top: 1px solid rgba(33, 33, 33, 0.1);
    padding-top: 7px;
@@ -529,7 +529,7 @@ footer {
  #headline {
    color: #333;
    font-size: 23pt;
-   font-family: 'SFMoMA', 'Proxima Nova';
+   font-family: "Inter", 'SFMoMA', 'Proxima Nova';
    font-weight:700;
    line-height: 110%;
    margin-top: 10px;
