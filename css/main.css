@@ -378,7 +378,6 @@ footer {
 
  #header a {
    color: #EB0028;
-   border-bottom: 1px dotted #EB0028;
    -webkit-transition: all 0.1s linear;
    -moz-transition: all 0.1s linear;
    -o-transition: all 0.1s linear;
@@ -386,8 +385,7 @@ footer {
  }
 
  #header a:hover {
-   color:black;
-   border-bottom: 1px solid black;
+   color:grey;
    text-decoration: none;
  }
 
