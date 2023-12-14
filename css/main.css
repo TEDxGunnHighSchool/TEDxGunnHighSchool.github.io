@@ -353,7 +353,7 @@ footer {
  }
 
  #header {
-   color: #555;
+   background-color: black;
    padding-top: 40px;
    padding-bottom: 10px;
  }
@@ -364,6 +364,8 @@ footer {
    margin-left: 25px;
    font-size: 14pt;
    text-decoration: none!important;
+   color: white;
+   text-underline: none;
  }
 
  #header h1 {
