@@ -20,6 +20,8 @@ body {
 
 #navbar {
   text-align: right;
+  background-color: black;
+  text-color: white;
 }
 
 @font-face {
