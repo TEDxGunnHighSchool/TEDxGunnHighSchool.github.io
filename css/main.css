@@ -647,6 +647,7 @@ img {
 #logo {
     float:left;
     display: block;
+    vertical-aligh: center;
 }
 
 .leadershipContent {
