@@ -353,10 +353,14 @@ footer {
  }
 
  #header {
-   background-color: black;
+   background-color: white;
    padding-top: 40px;
    padding-bottom: 10px;
  }
+
+#heads {
+    background-color: black;
+}
 
  #header .navLinks a {
    font-family: "Inter", "Helvetica Neue", sans-serif;
