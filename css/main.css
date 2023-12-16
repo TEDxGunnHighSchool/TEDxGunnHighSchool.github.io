@@ -20,6 +20,7 @@ body {
 
 #navbar {
   text-align: right;
+  margin-top: 10px;
   background-color: black;
   text-color: white;
 }
@@ -354,8 +355,8 @@ footer {
 
  #header {
    background-color: black;
-   padding-top: 40px;
-   padding-bottom: 10px;
+   padding-top: 20px;
+   padding-bottom: 20px;
  }
 
 #heads {
@@ -364,13 +365,20 @@ footer {
 
  #header .navLinks a {
    font-family: "Inter", "Helvetica Neue", sans-serif;
-   font-weight: 700;
+   font-weight: 55;
    margin-left: 25px;
    font-size: 14pt;
    text-decoration: none!important;
    color: white;
-   text-underline: none;
+   text-decoration: none;
+   
  }
+
+ #hero {
+    margin: 0 0 0 0;
+    width: 100%;
+    max-width: 100%;
+ }  
 
  #header h1 {
    font-family: "Inter", "SFMoMA", "San Francisco";
@@ -638,7 +646,7 @@ footer {
 
 img {
   /*border: solid 1px rgba(0, 0, 0, 0.2); */
-  padding: 3px;
+  padding: 0px;
   border-radius: 2px;
   background-clip: content-box; /* support: IE9+ */
   /*background-color: #ccc;*/
@@ -647,7 +655,7 @@ img {
 #logo {
     float:left;
     display: block;
-    vertical-aligh: center;
+    vertical-align: center;
 }
 
 .leadershipContent {
@@ -764,6 +772,7 @@ lead {
     padding-right: 20px;
     width: 100% !important;
     padding-bottom: 0px;
+    padding-top: 0px;
   }
 
   #navbar{
@@ -771,10 +780,11 @@ lead {
     padding-right: 20px;
     width: 100% !important;
     text-align: center;
+    vertical-align: center;
   }
 
   #logo {
-      margin: 20px auto -10px auto;
+      margin: auto auto auto auto;
       float:none;
   }
 
