@@ -4,9 +4,10 @@
 @font-face{font-family:"Inter";src:url('../fonts/Inter-Regular.ttf') format("truetype"),url('../fonts/Inter-Regular.ttf') format("ttf");font-weight:normal;font-style:normal}@font-face{font-family:"Inter";src:url('../fonts/Inter-Bold.ttf') format("truetype"),url('../fonts/Inter-Bold.ttf') format("ttf");font-weight:bold;font-style:normal}@font-face{font-family:"Inter";src:url('../fonts/SFMOMAText-RegularItalic.ttf') format("truetype"),url('../fonts/MoMA/SFMOMAText-RegularItalic.otf') format("otf");font-weight:normal;font-style:italic}@font-face{font-family:"SFMoMA";src:url('../fonts/MoMA/SFMOMAText-BoldItalic.ttf') format("truetype"),url('../fonts/MoMA/SFMOMAText-BoldItalic.otf') format("otf");font-weight:bold;font-style:italic}
 
 html {
-    color: #222;
+    color: white;
     font-size: 1em;
     line-height: 1.4;
+    background-color: black;
 }
 
 body {
@@ -23,6 +24,20 @@ body {
   margin-top: 10px;
   background-color: black;
   text-color: white;
+}
+
+.cols {
+  float: left;
+  width: 50%;
+  align-content: center;
+  padding: 180px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#twocol{
+  max-width: 100%;
 }
 
 @font-face {
@@ -162,7 +177,7 @@ table a:hover {
 }
 
 footer {
-   font-family: "Adobe Caslon";
+   font-family: "monospaced";
    font-size: 14pt;
    padding-top: 20px;
    padding-bottom: 20px;
@@ -198,12 +213,12 @@ footer {
  }
 
  a {
-   color:black;
+   color:#EB0028;
    text-decoration: none;
  }
 
  a:visited {
-   color:black;
+   color:#EB0028;
  }
 
  a:hover {
@@ -220,7 +235,7 @@ footer {
  .wallet {
    text-align:center;
    color: #999;
-   font-family: "Menlo";
+   font-family: monospace;
    margin-top: 40px;
    font-size: 9pt;
  }
@@ -361,6 +376,8 @@ footer {
 
 #heads {
     background-color: black;
+    max-width: 100%;
+    margin: 0 0 0 0;
 }
 
  #header .navLinks a {
@@ -375,10 +392,21 @@ footer {
  }
 
  #hero {
-    margin: 0 0 0 0;
     width: 100%;
     max-width: 100%;
+    position: relative;
  }  
+
+ #heroimage {
+  margin-top: -200px;
+}   
+
+#bottom-left {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: white;
+}
 
  #header h1 {
    font-family: "Inter", "SFMoMA", "San Francisco";
@@ -413,7 +441,7 @@ footer {
      font-family: "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
      font-size: 13pt;
      line-height: 160%;
-     color: #333;
+     color: white;
      margin-top: 10px!important;
  }
 
@@ -423,11 +451,11 @@ footer {
 
  .articleTitle {
    font-size: 18pt;
-   font-family:  "Inter", 'SFMoMA', 'Proxima Nova';
+   font-family:  "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
  }
 
  h2 {
-   font-family: "Inter", "SFMoMA", "San Francisco";
+   font-family: "Inter", "Proxima Nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
    font-weight: 600;
    line-height: 110%;
    border-bottom: 1px solid rgba(37, 36, 37, 0.1);
@@ -748,10 +776,17 @@ lead {
 .hljs-emphasis{font-style:italic}
 .hljs-strong{font-weight:bold}
 
+@media only screen and (max-width: 1900px) {
+  .cols {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   #header .navLinks a {
     margin-left: 15px;
   }
+
 }
 
 
@@ -759,7 +794,11 @@ lead {
   .navLinks a {
     margin-left: 10px;
     display: inline-block;
-    float:center;
+    float: center;
+  }
+
+  .cols {
+    padding: 20px;
   }
 
   #theme {
@@ -783,8 +822,17 @@ lead {
     vertical-align: center;
   }
 
+  #heads {
+    height: 200px;
+  }
+
+  #hero {
+    visibility: hidden;
+    height: 0px;
+  }
+
   #logo {
-      margin: auto auto auto auto;
+      margin: 20px auto auto auto;
       float:none;
   }
 
