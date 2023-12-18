@@ -776,7 +776,7 @@ lead {
 .hljs-emphasis{font-style:italic}
 .hljs-strong{font-weight:bold}
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 1800px) {
   .cols {
     width: 100%;
   }
