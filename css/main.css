@@ -594,6 +594,7 @@ footer {
  img {
      display: block;
      margin: auto;
+     pointer-events: none;
  }
 
 
