@@ -594,7 +594,6 @@ footer {
  img {
      display: block;
      margin: auto;
-     pointer-events: none;
  }
 
 
@@ -685,7 +684,6 @@ img {
     float:left;
     display: block;
     vertical-align: center;
-    pointer-events: none;
 }
 
 .leadershipContent {
