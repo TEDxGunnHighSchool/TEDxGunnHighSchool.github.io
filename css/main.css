@@ -831,12 +831,21 @@ lead {
   #header .navLinks a {
     margin-left: 15px;
   }
+  #headerr .navLinks ar {
+    margin-left: 15px;
+  }
 
 }
 
 
 @media only screen and (max-width: 850px) {
   .navLinks a {
+    margin-left: 10px;
+    display: inline-block;
+    float: center;
+  }
+
+  .navLinks ar {
     margin-left: 10px;
     display: inline-block;
     float: center;
