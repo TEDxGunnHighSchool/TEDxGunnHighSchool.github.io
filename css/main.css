@@ -26,6 +26,17 @@ body {
   text-color: white;
 }
 
+#navbarr {
+  text-align: right;
+  margin-top: 10px;
+  color: white;
+}
+
+#ar {
+  color: white;
+  text-decoration: none;
+}
+
 .cols {
   float: left;
   width: 50%;
@@ -86,6 +97,12 @@ img,
 svg,
 video {
     vertical-align: middle;
+}
+
+#ifrm {
+  height: 100vh;
+  min-height: 100vh;
+  overflow-y: scroll;
 }
 
 fieldset {
@@ -298,6 +315,21 @@ footer {
 
  }
 
+ #Register {
+  color: #fff;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  pointer
+
+ }
+
+ #Register:hover {
+  color: grey;
+  text-decoration: none;
+ }
+
  #mainDescription {
    font-family: "Inter", 'Proxima Nova';
    font-weight: 400;
@@ -374,10 +406,22 @@ footer {
    padding-bottom: 20px;
  }
 
+ #headerr {
+  background-color: #EB0028;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 #heads {
     background-color: black;
     max-width: 100%;
     margin: 0 0 0 0;
+}
+
+#headsr {
+  background-color: #EB0028;
+  max-width: 100%;
+  margin: 0 0 0 0;
 }
 
  #header .navLinks a {
