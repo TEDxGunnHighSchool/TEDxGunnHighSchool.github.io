@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile ../tedxgunnhighschool.github.io/portal/attendance/.htpasswd
+require valid-user
