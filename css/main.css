@@ -443,11 +443,16 @@ footer {
     height: calc(100vh-100.9px);
  }  
 
+#mobhero {
+    visibility: hidden;
+    height: 0%;
+}
+
  #heroimage {
   margin-top: -100px;
 }   
 
-#bottom-left {
+  #bottom-left {
   position: absolute;
   bottom: 50px;
   left: 50px;
@@ -884,6 +889,11 @@ lead {
   #heroimage {
     visibility: hidden;
     height: 0px;
+  }
+  
+  #mobhero {
+    visibility: visible;
+    height: auto;
   }
 
   #logo {
