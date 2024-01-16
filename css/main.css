@@ -443,10 +443,10 @@ footer {
     height: calc(100vh-100.9px);
  }  
 
-#mobhero {
+  #mobhero {
     visibility: hidden;
     height: 0%;
-}
+  }
 
  #heroimage {
   margin-top: -100px;
@@ -831,6 +831,22 @@ lead {
   .cols {
     width: 100%;
   }
+
+  #heroimage {
+    visibility: hidden;
+    height: 0px;
+  }
+  
+  #mobhero {
+    visibility: visible;
+    height: auto;
+    background-color: #EB0028;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    margin: 0 0 0 0;
+    max-width: 100%;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -884,16 +900,6 @@ lead {
 
   #heads {
     height: 200px;
-  }
-
-  #heroimage {
-    visibility: hidden;
-    height: 0px;
-  }
-  
-  #mobhero {
-    visibility: visible;
-    height: auto;
   }
 
   #logo {
