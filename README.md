@@ -11,6 +11,7 @@ This is the source code for our website. It will always be the latest version an
 - 2018-2019: [Austin Ho](https://github.com/aho1628) and [Peter Chen](https://github.com/Tafsiu314)
 - 2019-2022: [Adi Mittal](https://github.com/xperimex)
 - 2022-2025: [William Sahami](https://github.com/wSahami)
+- 2025-    : [Daria Sinha](https://github.com/Dariaaaaaaaaaaaaaaa)
 
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
