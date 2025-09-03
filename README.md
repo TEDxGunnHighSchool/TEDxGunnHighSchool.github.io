@@ -10,7 +10,7 @@ This is the source code for our website. It will always be the latest version an
 - 2017-2018: [Gautam Mittal](https://gmittal.github.io) and [Adnaan Sachidanandan](https://www.adnaan.co/)
 - 2018-2019: [Austin Ho](https://github.com/aho1628) and [Peter Chen](https://github.com/Tafsiu314)
 - 2019-2022: [Adi Mittal](https://github.com/xperimex)
-- 2022-    : [William Sahami](https://github.com/wSahami)
+- 2022-2025: [William Sahami](https://github.com/wSahami)
 
 ### License
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
