@@ -3,12 +3,12 @@
 This is the source code for our website. It will always be the latest version and will always be mirrored at [tedxgunnhighschool.org](https://tedxgunnhighschool.org/). If you have something to say, either [email us](mailto:tedx.gunnhs@gmail.com) or file an issue.
 
 ### Webmasters
-- 2013-2014: [Kartik Chandra](https://hardmath123.github.io) and [Sam Winslow](http://samwinslow.github.io/)
-- 2014-2015: [Sam Winslow](https://samwinslow.github.io/)
-- 2015-2016: [Gautam Mittal](https://gmittal.github.io)
-- 2016-2017: [Gautam Mittal](https://gmittal.github.io)
-- 2017-2018: [Gautam Mittal](https://gmittal.github.io) and [Adnaan Sachidanandan](https://www.adnaan.co/)
-- 2018-2019: [Austin Ho](https://github.com/aho1628) and [Peter Chen](https://github.com/Tafsiu314)
+- 2013-2014: [Kartik Chandra](https://hardmath123.github.io)
+- 2013-2015: [Sam Winslow](https://samwinslow.github.io/)
+- 2015-2018: [Gautam Mittal](https://gmittal.github.io)
+- 2017-2018: [Adnaan Sachidanandan](https://www.adnaan.co/)
+- 2018-2019: [Austin Ho](https://github.com/aho1628)
+- 2018-2019: [Peter Chen](https://github.com/Tafsiu314)
 - 2019-2022: [Adi Mittal](https://github.com/xperimex)
 - 2022-2025: [William Sahami](https://github.com/wSahami)
 - 2025-    : [Daria Sinha](https://github.com/Dariaaaaaaaaaaaaaaa)
