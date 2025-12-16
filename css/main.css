@@ -829,11 +829,6 @@ lead {
   .cols {
     width: 100%;
   }
-
-  #heroimage {
-    visibility: hidden;
-    height: 0px;
-  }
   
   #mobhero {
     visibility: visible;
@@ -851,6 +846,12 @@ lead {
   #header .navLinks a {
     margin-left: 15px;
   }
+
+  #heroimage {
+    visibility: hidden;
+    height: 0px;
+  }
+  
   #headerr .navLinks ar {
     margin-left: 15px;
   }
