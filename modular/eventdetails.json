@@ -6,6 +6,9 @@
     },
 
     {
+        "_note": "state can be either speaker, live, register, or off",
+
+        
         "state": "speaker",
         "live": "https://yt",
         "register": "forms.gle",

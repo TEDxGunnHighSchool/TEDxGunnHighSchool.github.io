@@ -1,4 +1,4 @@
-fetch('../../modular/footer.xml')
+fetch('../../support/footer.xml')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Failed to load footer: ${response.status}`);
@@ -13,7 +13,7 @@ fetch('../../modular/footer.xml')
     });
 
 
-fetch('../../modular/description.html')
+fetch('../../support/description.html')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Failed to load description: ${response.status}`);
@@ -27,7 +27,7 @@ fetch('../../modular/description.html')
         console.error('Error loading description:', error);
     });
 
-fetch('../../modular/navbar.html')
+fetch('../../support/navbar.html')
     .then(response => {
         if (!response.ok) {
             throw new Error(`Failed to load nav: ${response.status}`);
@@ -140,7 +140,6 @@ document.addEventListener("DOMContentLoaded", () => {
 fetch("../../modular/eventdetails.json")
         .then(response => response.json())
         .then(eventDetails => {
-            // Extract the date details
             const eventDate = `${eventDetails[0].month} ${eventDetails[0].day}, ${eventDetails[0].year}`;
             const eventYear = eventDetails[0].year;
             const eventState = eventDetails[1].state;
@@ -157,14 +156,6 @@ fetch("../../modular/eventdetails.json")
             document.querySelectorAll(".event-year").forEach(element => {
                 element.textContent = eventYear;
             });
-
-            const themeTitle = document.getElementById("themetitle");
-            const themeContent = document.getElementById("themedescription");
-
-            if (themename && themedescription) {
-                themeTitle.innerHTML = `${themename}`;
-                themeContent.innerHTML = `<i>${themename}</i> ${themedescription}`;
-            }
 
 
             const heroText = document.getElementById("herotext");
@@ -239,6 +230,14 @@ fetch("../../modular/eventdetails.json")
             } else {
                 heroText.innerHTML = `<h1>TEDxGunn High School <b>Youth</b> ${eventYear} is Upcoming</h1>`;
                 mobhero.innerHTML = `<h2>TEDxGunn High School <b>Youth</b> ${eventYear} is Upcoming</h2>`;
+            }
+
+            const themeTitle = document.getElementById("themetitle");
+            const themeContent = document.getElementById("themedescription");
+
+            if (themename && themedescription) {
+                themeTitle.innerHTML = `${themename}`;
+                themeContent.innerHTML = `<i>${themename}</i> ${themedescription}`;
             }
         })
         .catch(error => console.error("Error loading event details:", error));
