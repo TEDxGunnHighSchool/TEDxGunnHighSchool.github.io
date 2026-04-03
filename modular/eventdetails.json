@@ -6,8 +6,14 @@
     },
 
     {
-        "state": "register",
+        "state": "speaker",
         "live": "https://yt",
-        "register": "forms.gle"
+        "register": "forms.gle",
+        "speaker": "forms.gle"
+    },
+
+    {
+        "themename": "Brainstorm",
+        "themedescription": "is a theme for talks"
     }
 ]

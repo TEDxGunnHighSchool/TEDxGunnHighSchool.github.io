@@ -1,5 +1,5 @@
 [
-    { "status": "wait" },
+    { "status": "live" },
     { "time": "9:50 AM", "event": "Doors Open" },
     { "time": "10:25 AM", "event": "Opening: Nithya Desikan", "id": "nithya" },
     { "time": "10:35 AM", "event": "Ira Tiwary", "id": "ira" },

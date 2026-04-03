@@ -883,7 +883,7 @@ lead {
 
   #mobhero {
     visibility: visible;
-    display: inline-block;
+    display: block;
     height: auto;
     background-color: #EB0028;
     padding-top: 30px;
