@@ -138,55 +138,85 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 fetch("../../modular/eventdetails.json")
-        .then(response => response.json())
-        .then(eventDetails => {
-            const eventDate = `${eventDetails[0].month} ${eventDetails[0].day}, ${eventDetails[0].year}`;
-            const eventYear = eventDetails[0].year;
-            const eventState = eventDetails[1].state;
-            const themename = eventDetails[2].themename;
-            const themedescription = eventDetails[2].themedescription;
-            const liveLink = eventDetails[1].live;
-            const registerLink = eventDetails[1].register;
-            const speakerLink = eventDetails[1].speaker;
+    .then(response => response.json())
+    .then(eventDetails => {
+        const eventDate = `${eventDetails[0].month} ${eventDetails[0].day}, ${eventDetails[0].year}`;
+        const eventYear = eventDetails[0].year;
+        const eventAnnularity = parseInt(eventYear) - 2010;
+        const annularitySuffix = (eventAnnularity % 10 === 1 && eventAnnularity % 100 !== 11) ? "st" : (eventAnnularity % 10 === 2 && eventAnnularity % 100 !== 12) ? "nd" : (eventAnnularity % 10 === 3 && eventAnnularity % 100 !== 13) ? "rd" : "th";
+        const eventState = eventDetails[1].state;
+        const themename = eventDetails[2].themename;
+        const themedescription = eventDetails[2].themedescription;
+        const liveLink = eventDetails[1].live;
+        const registerLink = eventDetails[1].register;
+        const speakerLink = eventDetails[1].speaker;
 
-            document.querySelectorAll(".event-date").forEach(element => {
-                element.textContent = eventDate;
-            });
+        document.querySelectorAll(".event-date").forEach(element => {
+            element.textContent = eventDate;
+        });
 
-            document.querySelectorAll(".event-year").forEach(element => {
-                element.textContent = eventYear;
-            });
+        document.querySelectorAll(".event-year").forEach(element => {
+            element.textContent = eventYear;
+        });
+
+        document.querySelectorAll(".event-annularity").forEach(element => {
+            element.textContent = `${eventAnnularity}${annularitySuffix}`;
+        });
 
 
-            const heroText = document.getElementById("herotext");
-            const mobHero = document.getElementById("mobhero");
+        const heroText = document.getElementById("herotext");
+        const mobHero = document.getElementById("mobhero");
+
+        if (mobHero && heroText) {
 
             if (eventState === "live") {
                 heroText.innerHTML = `
-                    <h1>TEDxGunn High School <b>Youth</b> ${eventYear} is here!<br><br>
-                    <a id="Register" href="${liveLink}" target="_blank">Watch Now
-                        <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
-                        </svg>
-                    </a>
-                    </h1>`;
+                        <h1>TEDxGunn High School <b>Youth</b> ${eventYear} is here!<br><br>
+                        <a id="Register" href="${liveLink}" target="_blank">Watch Now
+                            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        </h1>`;
                 mobHero.innerHTML = `
-                    <center><div >
-                        <h2 style="color: white;">TEDxGunn High School <b>Youth</b> ${eventYear} is here! 
-                            </br></br>
-                            <a id="Register" href=${liveLink}>Watch Now  
-                                <svg width="9" height="15.75" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
-                                </svg>
-                            </a>
-                            </br>
-                        </h2>
-                    </div></center>
-                `;
+                        <center><div >
+                            <h2 style="color: white;">TEDxGunn High School <b>Youth</b> ${eventYear} is here! 
+                                </br></br>
+                                <a id="Register" href=${liveLink}>Watch Now  
+                                    <svg width="9" height="15.75" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                </br>
+                            </h2>
+                        </div></center>
+                    `;
             } else if (eventState === "register") {
                 heroText.innerHTML = `
+                        <h1>TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming!<br><br>
+                        <a id="Register" href="${registerLink}" target="_blank">Register
+                            <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                        </h1>`;
+                mobHero.innerHTML = `
+                        <center><div >
+                            <h2 style="color: white;">TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming! 
+                                </br></br>
+                                <a id="Register" href=${registerLink}>Register  
+                                    <svg width="9" height="15.75" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                </br>
+                            </h2>
+                        </div></center>
+                    `;
+            } else if (eventState === "speaker") {
+                heroText.innerHTML = `
                     <h1>TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming!<br><br>
-                    <a id="Register" href="${registerLink}" target="_blank">Register
+                    <a id="Register" href="${speakerLink}" target="_blank">Interested in <br> Speaking?
                         <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
                         </svg>
@@ -196,7 +226,7 @@ fetch("../../modular/eventdetails.json")
                     <center><div >
                         <h2 style="color: white;">TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming! 
                             </br></br>
-                            <a id="Register" href=${registerLink}>Register  
+                            <a id="Register" href=${speakerLink}>Interested in Speaking?  
                                 <svg width="9" height="15.75" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
                                 </svg>
@@ -205,39 +235,22 @@ fetch("../../modular/eventdetails.json")
                         </h2>
                     </div></center>
                 `;
-            } else if (eventState === "speaker") {
-                heroText.innerHTML = `
-                <h1>TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming!<br><br>
-                <a id="Register" href="${speakerLink}" target="_blank">Interested in <br> Speaking?
-                    <svg width="12" height="21" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
-                    </svg>
-                </a>
-                </h1>`;
-            mobHero.innerHTML = `
-                <center><div >
-                    <h2 style="color: white;">TEDxGunn High School <b>Youth</b> ${eventYear} is upcoming! 
-                        </br></br>
-                        <a id="Register" href=${speakerLink}>Interested in Speaking?  
-                            <svg width="9" height="15.75" viewBox="0 0 12 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M11.4609 10.1719C11.4609 9.87891 11.3438 9.60938 11.1211 9.39844L1.83984 0.304688C1.62891 0.105469 1.37109 0 1.06641 0C0.46875 0 0 0.457031 0 1.06641C0 1.35938 0.117188 1.62891 0.304688 1.82812L8.83594 10.1719L0.304688 18.5156C0.117188 18.7148 0 18.9727 0 19.2773C0 19.8867 0.46875 20.3438 1.06641 20.3438C1.37109 20.3438 1.62891 20.2383 1.83984 20.0273L11.1211 10.9453C11.3438 10.7227 11.4609 10.4648 11.4609 10.1719Z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                        </br>
-                    </h2>
-                </div></center>
-            `;
             } else {
                 heroText.innerHTML = `<h1>TEDxGunn High School <b>Youth</b> ${eventYear} is Upcoming</h1>`;
                 mobhero.innerHTML = `<h2>TEDxGunn High School <b>Youth</b> ${eventYear} is Upcoming</h2>`;
             }
+        }
 
-            const themeTitle = document.getElementById("themetitle");
-            const themeContent = document.getElementById("themedescription");
+        const themeTitle = document.getElementById("themetitle");
+        const themeContent = document.getElementById("themedescription");
 
-            if (themename && themedescription) {
-                themeTitle.innerHTML = `${themename}`;
-                themeContent.innerHTML = `<i>${themename}</i> ${themedescription}`;
-            }
-        })
-        .catch(error => console.error("Error loading event details:", error));
+        console.log("NAME:", themename)
+        console.log("DESCRIPTION:", themedescription)
+
+        if (themename && themedescription) {
+            console.log("Theme Injected")
+            themeTitle.innerHTML = `${themename}`;
+            themeContent.innerHTML = `<i>${themename}</i> ${themedescription}`;
+        }
+    })
+    .catch(error => console.error("Error loading event details:", error));
