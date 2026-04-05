@@ -2,7 +2,8 @@
 
 This is the source code for our website. It will always be the latest version and will always be mirrored at [tedxgunnhighschool.org](https://tedxgunnhighschool.org/). If you have something to say, either [email us](mailto:tedx.gunnhs@gmail.com) or file an issue.
 
-### Webmasters
+## Webmasters
+
 - 2013-2014: [Kartik Chandra](https://hardmath123.github.io)
 - 2013-2015: [Sam Winslow](https://samwinslow.github.io/)
 - 2015-2018: [Gautam Mittal](https://gmittal.github.io)
@@ -13,7 +14,12 @@ This is the source code for our website. It will always be the latest version an
 - 2022-2025: [William Sahami](https://github.com/wSahami)
 - 2025-    : [Daria Sinha](https://github.com/Dariaaaaaaaaaaaaaaa)
 
-### License
+## Maintenance
+
+The site can be maintained by updating the files in the `modular` folder. `conference.json` contains the schedule information; `eventdetails.json` contains the event date, theme information, and important links to conference pages. `speakers.json` contains the names, bios and links to the headshots (which should be uploaded to the `pics` folder).
+
+## License
+
 The MIT License ([MIT](https://tldrlegal.com/license/mit-license))
 
 Copyright (c) TEDxGunnHighSchool
