@@ -1,0 +1,22 @@
+[
+    {
+        "year": "2026",
+        "day": "13th",
+        "month": "April"
+    },
+
+    {
+        "_note": "state can be either speaker, live, register, or off",
+
+        
+        "state": "speaker",
+        "live": "https://yt",
+        "register": "forms.gle",
+        "speaker": "forms.gle"
+    },
+
+    {
+        "themename": "Brainstorm",
+        "themedescription": "is a theme for talks"
+    }
+]

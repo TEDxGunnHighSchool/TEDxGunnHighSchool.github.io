@@ -1,0 +1,9 @@
+[
+    { "status": "live" },
+    { "time": "9:50 AM", "event": "Doors Open" },
+    { "time": "10:25 AM", "event": "Opening: Nithya Desikan", "id": "nithya" },
+    { "time": "10:35 AM", "event": "Ira Tiwary", "id": "ira" },
+    { "time": "11:15 AM", "event": "Elizabeth Michaelian", "id": "elizabeth" },
+    { "time": "11:45 AM", "event": "Erin Tsutsui", "id": "erin" },
+    { "time": "3:20 PM", "event": "Annie Vo", "id": "annie" }
+  ]
